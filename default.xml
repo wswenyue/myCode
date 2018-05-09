@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch=".." />
+
+  <remote  name="private"
+           fetch="ssh://git@github.com" />
+<!-- 
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com"
+           revision="refs/tags/android-7.1.1_r6" /> -->
+
+  <!-- <default revision="refs/heads/cm-14.1"
+           remote="github"
+           sync-c="true"
+           sync-j="4" /> -->
+
+
+  <default revision="master"
+           remote="github"
+           sync-c="true"
+           sync-j="4" />
+
+  <!-- AOSP Projects --><!-- 
+  <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" remote="aosp" /> -->
+
+  <project path="channelHelper" name="channelHelper" /> 
+  
+  <project path="apkparser" name="apkparser" /> 
+
+  <!-- <include name="snippets/cm.xml" /> -->
+
+</manifest>
